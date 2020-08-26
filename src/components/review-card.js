@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-import Icon from "../components/icon"
+import Icon from "../components/icon.tsx"
 
 const iconStyle = {
   height: "2rem",

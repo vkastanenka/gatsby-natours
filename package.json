@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-natours",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple project demonstrating combined knowledge of Gatsby.js, Theme.ui, and TypeScript",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Victoria Kastanenka <vkastanenka@gmail.com>",
   "dependencies": {
     "axios": "^0.20.0",
     "gatsby": "^2.24.47",
@@ -55,7 +55,6 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "proxy": "http://localhost:5000",
   "root": "public/",
   "headers": {
     "/**": {

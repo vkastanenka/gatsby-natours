@@ -1,9 +1,11 @@
+// React
 import React from "react"
 import { graphql } from "gatsby"
 
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
+// Components
 import Layout from "../components/layout/layout/layout"
 import SEO from "../components/seo"
 import TourCard from "../components/tour-card"

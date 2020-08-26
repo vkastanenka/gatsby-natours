@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-import Icon from "../../../icon"
+import Icon from "../../../icon.tsx"
 
 const detailStyle = {
   fontSize: "1.5rem",

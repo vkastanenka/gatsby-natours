@@ -5,7 +5,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-import Icon from "../components/icon"
+import Icon from "../components/icon.tsx"
 
 const iconStyle = {
   height: "2rem",
