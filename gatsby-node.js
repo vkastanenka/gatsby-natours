@@ -33,7 +33,7 @@ exports.sourceNodes = async ({ actions, createContentDigest }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const tourPageTemplate = path.resolve("src/templates/tour.js")
+  const tourPageTemplate = path.resolve("src/templates/tour.tsx")
 
   return graphql(`
     query Tours {

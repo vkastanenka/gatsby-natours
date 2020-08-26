@@ -10,26 +10,14 @@ import Layout from "../components/layout/layout/layout"
 import SEO from "../components/seo"
 import TourCard from "../components/tour-card"
 
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-]
+// Utilities
+import { months } from '../utils/date';
 
 const IndexPage = ({ data }) => {
   const { nodes } = data.allTours
 
-  const tours = nodes.map(tour => {
-    const startDate = new Date(tour.startDates[0])
+  const tours: Object[] = nodes.map(tour => {
+    const startDate: Date = new Date(tour.startDates[0])
     return (
       <TourCard
         key={tour.id}
