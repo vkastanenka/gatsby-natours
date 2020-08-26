@@ -3,7 +3,7 @@ import sprite from "../images/icons.svg";
 
 type Props = {
   type: string,
-  className: string,
+  className?: string,
   onClick?: (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => void
 }
 

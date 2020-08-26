@@ -28,13 +28,16 @@ const CTA = props => {
           }
         }
       }
+      image: file(relativePath: { eq: "logo-white.png" }) {
+        id
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
-
-  const logo = data.allImageSharp.nodes.filter(img => {
-    if (img.sizes.src.includes("logo-white.png")) return true
-    return false
-  })
 
   const firstTwoImgs = [props.images[0], props.images[1]]
 
@@ -106,7 +109,7 @@ const CTA = props => {
           >
             <Img
               sx={{ width: "100%" }}
-              fluid={logo[0].fluid}
+              fluid={data.image.childImageSharp.fluid}
               alt="Natours logo"
             />
           </div>

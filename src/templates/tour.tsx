@@ -1,5 +1,7 @@
+// React
 import React from "react"
 
+// Components
 import SEO from "../components/seo"
 import Layout from "../components/layout/layout/layout"
 import Header from "../components/layout/pages/tour/header"
@@ -10,11 +12,13 @@ import Reviews from "../components/layout/pages/tour/reviews"
 import CTA from "../components/layout/pages/tour/cta"
 
 const Tour = ({ pageContext: { tour } }) => {
+  console.log(tour)
+
   return (
     <Layout>
       <SEO title={`${tour.name} Tour`} />
       <Header
-        image={tour.imageCover}
+        image={tour.imageCover.childImageSharp.fluid}
         name={tour.name}
         duration={tour.duration}
         startLocation={tour.startLocation.description}

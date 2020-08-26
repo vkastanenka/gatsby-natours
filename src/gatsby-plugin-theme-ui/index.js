@@ -88,6 +88,14 @@ export default {
       backgroundColor: primary,
     },
   },
+  icons: {
+    sizes: {
+      primary: {
+        width: '2rem',
+        height: '2rem'
+      }
+    }
+  },
   utilities: {
     flexAbsCenter: {
       display: "flex",

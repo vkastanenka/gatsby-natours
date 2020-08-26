@@ -11,10 +11,10 @@ import SEO from "../components/seo"
 import TourCard from "../components/tour-card"
 
 // Utilities
-import { months } from '../utils/date';
+import { months } from "../utils/date"
 
 const IndexPage = ({ data }) => {
-  const { nodes } = data.allTours
+  const { nodes } = data.allTour
 
   const tours: Object[] = nodes.map(tour => {
     const startDate: Date = new Date(tour.startDates[0])
@@ -80,44 +80,43 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-  query Tours {
-    allTours {
+  query TourCards {
+    allTour {
       nodes {
-        description
-        difficulty
-        duration
-        guides {
-          _id
-          active
-          email
-          name
-          photo
-          role
-        }
-        id
-        imageCover
-        images
-        locations {
-          _id
-          coordinates
-          day
-          description
-          type
-        }
-        maxGroupSize
-        name
-        price
         ratingsQuantity
         ratingsAverage
+        price
+        maxGroupSize
+        name
         slug
-        startDates
-        startLocation {
-          address
-          coordinates
-          description
-          type
+        imageCover {
+          childImageSharp {
+            fluid {
+              base64
+              tracedSVG
+              srcWebp
+              srcSetWebp
+              originalImg
+              originalName
+            }
+          }
         }
+        duration
+        difficulty
         summary
+        startDates
+        locations {
+          type
+          _id
+          day
+          description
+        }
+        id
+        startLocation {
+          type
+          description
+          address
+        }
       }
     }
   }
