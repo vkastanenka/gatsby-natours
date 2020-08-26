@@ -1,7 +1,7 @@
 {
   "name": "gatsby-natours",
   "private": true,
-  "description": "A simple project demonstrating combined knowledge of Gatsby.js, Theme.ui, and TypeScript",
+  "description": "A simple project demonstrating combined knowledge of Gatsby.js, Theme.ui, and TypeScript for KOHO",
   "version": "0.1.0",
   "author": "Victoria Kastanenka <vkastanenka@gmail.com>",
   "dependencies": {
